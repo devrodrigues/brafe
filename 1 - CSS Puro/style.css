@@ -82,3 +82,66 @@ body {
     font-style: italic;
     font-size: 1.125em; /* 18/16 */
 }
+
+/* Sobre */
+
+.sobre {
+    padding: 60px 0;
+}
+
+.sobre-container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.sobre-container::after, .sobre-container::before {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.sobre h2 {
+    text-align: center;
+    font-size: 2.25em;
+    margin-bottom: 60px;
+}
+
+/* note que esta classe é equivalente ao grid-8 do Bikcraft */
+.sobre-item {
+    width: 460px;
+    float: left;
+    /* as figuras tẽm margem de 10 px para cada lado */
+    margin: 0 10px;
+}
+
+.sobre-item img {
+    display: block;
+    max-width: 100%;
+}
+
+.sobre-item h3 {
+    font-size: 2.25em;
+    /* line-height 1em pois não queremos altura de linha nele */
+    line-height: 1em;
+    background: #252525;
+    width: 220px;
+    color: #fff;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    padding: 5px 0 10px 0;
+    top: -25px;
+    /* alteramos position:static para que a propriedade top funcione */
+    position: relative;
+}
+
+/* seletor filho direto de .sobre */
+/* aqui não há muita utilidade, mas pode facilitar manutenções futuras */
+.sobre > p {
+    font-size: 1.25em;
+    line-height: 1.4em;
+    font-style: italic;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 460px;
+}

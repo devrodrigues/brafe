@@ -53,3 +53,32 @@ body {
     /* 18px (desejado) / default (16px) = 1.125 */
     font-size: 1.125em; 
 }
+
+/* Intro */
+
+.intro {
+    background: url('./img/bg-intro.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 130px 0;
+    text-align: center;
+    color: #fff;
+}
+
+.intro h1 {
+    text-transform: uppercase;
+    font-size: 3em; /* 48/16 */
+}
+
+.intro h1::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 4px;
+    background: #fff;
+    margin: 10px auto;
+}
+
+.intro p {
+    font-style: italic;
+    font-size: 1.125em; /* 18/16 */
+}

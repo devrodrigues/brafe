@@ -79,7 +79,7 @@ body {
 /* Intro */
 
 .intro {
-    background: url('./img/bg-intro.jpg') no-repeat center center;
+    background: url('../img/bg-intro.jpg') no-repeat center center;
     background-size: cover;
     padding: 130px 0;
     text-align: center;

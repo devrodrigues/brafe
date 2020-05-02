@@ -336,7 +336,7 @@ h2.produtos-mineiro::before {
 }
 
 .locais-item > div {
-    width: 460px;
+    max-width: 460px;
     float: left;
     margin: 0 10px;
 }
